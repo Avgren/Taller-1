@@ -1,0 +1,20 @@
+{
+  "name": "programacion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev":"tsnd --respawn --clear SRC/main.ts",
+    "build":"rimraf ./dist && tsc",
+    "start":"npm run build && node dist/main.js"
+  },
+  "keywords": [],
+  "author": "Angel Guanipa <angel.vale.azza35@gmail.com>",
+  "license": "UNLICENSED",
+  "description": "cualquier cosa",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  }
+}
