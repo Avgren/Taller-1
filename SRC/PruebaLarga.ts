@@ -48,7 +48,7 @@ export function productosDisponibles(products:Products[]):Return[]{
 }
 
 export function productoCaro(products:Products[]){
-    // return products=products.sort(()=>)
+    return products=products.sort()
 }
 
 // 2
