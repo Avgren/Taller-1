@@ -5,7 +5,7 @@
 //     password: number;
 // }
 
-import {precioTotal, productosOrdenados } from "./Taller";
+import { calcularDescuento, productosDisponibles, products } from "./PruebaLarga";
 
 // const users:User[]=[
 //     {
@@ -177,31 +177,34 @@ const users:User[]=[
 // 6
 
 
-type CreateUser = {
-    name: string;
-    email: string;
-    password: string;
-}
+// type CreateUser = {
+//     name: string;
+//     email: string;
+//     password: string;
+// }
 
-function crearUsuario( createUser: CreateUser ): User{
-    const user:User = {
-        name: createUser.name,
-        email: createUser.email,
-        password: createUser.password,
-        role: "USER",
-        isActive: true,
-        id: users.length+1,
-        createdAt: new Date(),
-        uptadetAt: new Date()
-    }
+// function crearUsuario( createUser: CreateUser ): User{
+//     const user:User = {
+//         name: createUser.name,
+//         email: createUser.email,
+//         password: createUser.password,
+//         role: "USER",
+//         isActive: true,
+//         id: users.length+1,
+//         createdAt: new Date(),
+//         uptadetAt: new Date()
+//     }
 
-    users.push(user)
+//     users.push(user)
 
-    return user
-}
+//     return user
+// }
 
 // console.log(crearUsuario({name: "carlos", email: "carlos@google.com", password: "123456"}))
-productosOrdenados
+// productosOrdenados
 // console.table(productosOrdenados)
-precioTotal
-console.log(precioTotal)
+// precioTotal
+// console.log(precioTotal)
+
+// console.table(productosDisponibles(products))
+console.table(calcularDescuento(products))
