@@ -1,9 +1,9 @@
 {
   "name": "programacion",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start:dev":"tsnd --respawn --clear SRC/main.ts",
+    "start:dev":"tsnd --respawn --clear src/main.ts",
     "build":"rimraf ./dist && tsc",
     "start":"npm run build && node dist/main.js"
   },

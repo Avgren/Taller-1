@@ -40,7 +40,7 @@ function productosDisponibles(products) {
     return products = products.filter((product) => product.stock > 0);
 }
 function productoCaro(products) {
-    // return products=products.sort(()=>)
+    return products = products.sort();
 }
 function calcularDescuento(products) {
     return products.map((product) => ({

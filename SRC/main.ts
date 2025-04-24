@@ -5,93 +5,9 @@
 //     password: number;
 // }
 
-import { calcularDescuento, productosDisponibles, products } from "./PruebaLarga";
-
-// const users:User[]=[
-//     {
-//         id: 1,
-//         name:"carmen",
-//         email:"carmen@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 2,
-//         name:"andres",
-//         email:"andres@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 3,
-//         name:"marcos",
-//         email:"marcos@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 4,
-//         name:"jose",
-//         email:"jose@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 5,
-//         name:"maria",
-//         email:"maria@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 6,
-//         name:"pedro",
-//         email:"pedro@gmail.com",
-//         password:123456,               
-//     },
-// ];
-
-// const users2:User[]=[
-//     {
-//         id: 1,
-//         name:"carmen",
-//         email:"carmen@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 2,
-//         name:"andres",
-//         email:"andres@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 3,
-//         name:"marcos",
-//         email:"marcos@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 4,
-//         name:"jose",
-//         email:"jose@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 5,
-//         name:"maria",
-//         email:"maria@gmail.com",
-//         password:123456,               
-//     },
-//     {
-//         id: 6,
-//         name:"pedro",
-//         email:"pedro@gmail.com",
-//         password:123456,               
-//     },
-// ];
-
-// // const user:User={
-// //     id: 0,
-// //     name: "",
-// //     email: "",
-// //     password: 0
-// // }
-
+import { isProductZero, productByCategory, productByPrice, products } from "./Laboratorio";
+import { sortUserByCreatedAt, user } from "./practica";
+import { calcularDescuento, productosDisponibles, } from "./PruebaLarga";
 
 // console.table(users[3])
 // // console.table(users.concat(users2))
@@ -103,49 +19,49 @@ import { calcularDescuento, productosDisponibles, products } from "./PruebaLarga
 
 // console.log(array)
 
-type User={
-    id:number;
-    name:string;
-    email:string;
-    password:string;
-    role:string;
-    isActive:boolean;
-    createdAt:Date;
-    uptadetAt:Date;
-}
+// type User={
+//     id:number;
+//     name:string;
+//     email:string;
+//     password:string;
+//     role:string;
+//     isActive:boolean;
+//     createdAt:Date;
+//     uptadetAt:Date;
+// }
 
-const users:User[]=[
-    {
-        id: 1,
-        name: "andres",
-        email: "andres@gmail.com",
-        password: "123456",
-        role: "ADMIN",
-        isActive: true,
-        createdAt:  new Date("03/27/2025"),
-        uptadetAt:  new Date("03/27/2025"),
-    },
-    {
-        id: 2,
-        name: "carlos",
-        email: "carlos@hotmail.com",
-        password: "123456",
-        role: "ADMIN",
-        isActive: true,
-        createdAt:  new Date("03/27/2025"),
-        uptadetAt:  new Date("03/27/2025"),
-    },
-    {
-        id:3,
-        name: "jesus",
-        email:"jesus@gmail.com",
-        password: "123456",
-        role: "ADMIN",
-        isActive: false,
-        createdAt: new Date("02/27/2025"),
-        uptadetAt: new Date("03/27/2025"),
-    }
-]
+// const users:User[]=[
+//     {
+//         id: 1,
+//         name: "andres",
+//         email: "andres@gmail.com",
+//         password: "123456",
+//         role: "ADMIN",
+//         isActive: true,
+//         createdAt:  new Date("03/27/2025"),
+//         uptadetAt:  new Date("03/27/2025"),
+//     },
+//     {
+//         id: 2,
+//         name: "carlos",
+//         email: "carlos@hotmail.com",
+//         password: "123456",
+//         role: "ADMIN",
+//         isActive: true,
+//         createdAt:  new Date("03/27/2025"),
+//         uptadetAt:  new Date("03/27/2025"),
+//     },
+//     {
+//         id:3,
+//         name: "jesus",
+//         email:"jesus@gmail.com",
+//         password: "123456",
+//         role: "ADMIN",
+//         isActive: false,
+//         createdAt: new Date("02/27/2025"),
+//         uptadetAt: new Date("03/27/2025"),
+//     }
+// ]
 
 // 1
 // const values = users.map((user)=>{
@@ -207,4 +123,16 @@ const users:User[]=[
 // console.log(precioTotal)
 
 // console.table(productosDisponibles(products))
-console.table(calcularDescuento(products))
+// console.table(calcularDescuento(products))
+
+// const sortedUsers= sortUserByCreatedAt(user);
+// console.log(sortedUsers);
+
+// const filteredProducts=productByCategory(products);
+// console.log(filteredProducts)
+
+// const productosAgotados=isProductZero(products)
+// console.log(productosAgotados)
+
+// const rangoDeProductos=productByPrice(products)
+// console.log(rangoDeProductos)
